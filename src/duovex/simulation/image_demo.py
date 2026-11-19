@@ -9,7 +9,9 @@ import json
 import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
 from duovex.communication.mqtt_client import publish_advisory
+
 
 SUPPORTED = ("car", "motorcycle", "bus", "truck")
 ALIASES = {"car": "car", "motorcycle": "motorcycle", "motorbike": "motorcycle",
@@ -17,7 +19,7 @@ ALIASES = {"car": "car", "motorcycle": "motorcycle", "motorbike": "motorcycle",
 
 def validate_counts(counts):
     if not isinstance(counts, dict):
-        raise ValueError("Counts must be a JSON object")
+        raise TypeError("Counts must be a JSON object")
     result = dict.fromkeys(SUPPORTED, 0)
     for name, value in counts.items():
         if name not in SUPPORTED or type(value) is not int or value < 0:
