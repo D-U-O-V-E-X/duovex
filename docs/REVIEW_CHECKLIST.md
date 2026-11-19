@@ -1,0 +1,12 @@
+# Phase-1 review evidence checklist
+- [ ] Python/dependency versions and clean test run recorded
+- [ ] SUMO/netconvert versions recorded; generated junction inspected in SUMO-GUI
+- [ ] Routes and traffic-light logic validated (including turning movements if added)
+- [ ] Multiple seeds and demand levels executed
+- [ ] Raw CSV/XML and run metadata retained
+- [ ] Persistence and historical-average MAE/RMSE computed on chronological holdout
+- [ ] Emergency alert positive/negative geometry cases tested
+- [ ] MQTT broker, publisher and simulated subscriber logs retained
+- [ ] QoS 0/1/2 compared separately from application-level impairment
+- [ ] Graphs generated from actual saved results
+- [ ] Limitations and non-claims stated in presentation
