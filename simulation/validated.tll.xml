@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-19T06:56:11.191482+05:30 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="simulation/junction.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="simulation/validated"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<tlLogics version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tllogic_file.xsd">
+    <tlLogic id="C" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGggrrrrrGGGggrrrrr"/>
+        <phase duration="3"  state="yyyyyrrrrryyyyyrrrrr"/>
+        <phase duration="42" state="rrrrrGGGggrrrrrGGGgg"/>
+        <phase duration="3"  state="rrrrryyyyyrrrrryyyyy"/>
+    </tlLogic>
+
+    <connection from="e_in" to="n_out" fromLane="0" toLane="0" tl="C" linkIndex="5"/>
+    <connection from="e_in" to="w_out" fromLane="0" toLane="0" tl="C" linkIndex="6"/>
+    <connection from="e_in" to="w_out" fromLane="1" toLane="1" tl="C" linkIndex="7"/>
+    <connection from="e_in" to="s_out" fromLane="1" toLane="1" tl="C" linkIndex="8"/>
+    <connection from="e_in" to="e_out" fromLane="1" toLane="1" tl="C" linkIndex="9"/>
+    <connection from="n_in" to="w_out" fromLane="0" toLane="0" tl="C" linkIndex="0"/>
+    <connection from="n_in" to="s_out" fromLane="0" toLane="0" tl="C" linkIndex="1"/>
+    <connection from="n_in" to="s_out" fromLane="1" toLane="1" tl="C" linkIndex="2"/>
+    <connection from="n_in" to="e_out" fromLane="1" toLane="1" tl="C" linkIndex="3"/>
+    <connection from="n_in" to="n_out" fromLane="1" toLane="1" tl="C" linkIndex="4"/>
+    <connection from="s_in" to="e_out" fromLane="0" toLane="0" tl="C" linkIndex="10"/>
+    <connection from="s_in" to="n_out" fromLane="0" toLane="0" tl="C" linkIndex="11"/>
+    <connection from="s_in" to="n_out" fromLane="1" toLane="1" tl="C" linkIndex="12"/>
+    <connection from="s_in" to="w_out" fromLane="1" toLane="1" tl="C" linkIndex="13"/>
+    <connection from="s_in" to="s_out" fromLane="1" toLane="1" tl="C" linkIndex="14"/>
+    <connection from="w_in" to="s_out" fromLane="0" toLane="0" tl="C" linkIndex="15"/>
+    <connection from="w_in" to="e_out" fromLane="0" toLane="0" tl="C" linkIndex="16"/>
+    <connection from="w_in" to="e_out" fromLane="1" toLane="1" tl="C" linkIndex="17"/>
+    <connection from="w_in" to="n_out" fromLane="1" toLane="1" tl="C" linkIndex="18"/>
+    <connection from="w_in" to="w_out" fromLane="1" toLane="1" tl="C" linkIndex="19"/>
+</tlLogics>
