@@ -12,3 +12,7 @@ results/processed/*
 !results/processed/.gitkeep
 results/plots/*
 !results/plots/.gitkeep
+*.egg-info/
+
+# Python package metadata
+*.egg-info/

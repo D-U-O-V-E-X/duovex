@@ -1,6 +1,7 @@
+import random
 from dataclasses import dataclass
 from statistics import mean
-import random
+
 
 @dataclass(frozen=True)
 class ReliabilityResult:

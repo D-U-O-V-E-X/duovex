@@ -1,6 +1,9 @@
 import json
+
 import paho.mqtt.client as mqtt
+
 from duovex.config import Settings
+
 
 def publish_advisory(payload, settings=None):
     cfg = settings or Settings()

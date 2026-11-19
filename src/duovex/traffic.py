@@ -1,6 +1,7 @@
-from dataclasses import dataclass
 from collections import defaultdict, deque
+from dataclasses import dataclass
 from statistics import mean
+
 
 @dataclass(frozen=True)
 class TrafficObservation:

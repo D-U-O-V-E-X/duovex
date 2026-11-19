@@ -4,6 +4,7 @@ import csv
 import os
 from pathlib import Path
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--steps", type=int, default=1800)
