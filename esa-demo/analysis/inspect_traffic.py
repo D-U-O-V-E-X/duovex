@@ -22,7 +22,7 @@ def main():
     print("Time range:", data.time_s.min(), data.time_s.max())
     print("Missing values:", data.isna().sum().to_dict())
     print("Maximum observed queue:", data.queue_length.max())
-    print("Mean recorded speed:", data.mean_speed.mean() if "mean_speed" in data else "column unavailable")
+    print("Mean recorded speed:", data.mean_speed_mps.mean() if "mean_speed_mps" in data else "column unavailable")
     grouped = data.groupby("time_s", as_index=False).agg(
         vehicle_count=("vehicle_count", "sum"),
         queue_length=("queue_length", "sum"))
