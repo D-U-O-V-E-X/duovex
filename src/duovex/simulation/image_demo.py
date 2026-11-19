@@ -12,7 +12,6 @@ from pathlib import Path
 
 from duovex.communication.mqtt_client import publish_advisory
 
-
 SUPPORTED = ("car", "motorcycle", "bus", "truck")
 ALIASES = {"car": "car", "motorcycle": "motorcycle", "motorbike": "motorcycle",
            "bus": "bus", "truck": "truck"}
