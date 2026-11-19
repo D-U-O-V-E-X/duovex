@@ -5,6 +5,7 @@ import pytest
 
 from duovex.simulation.image_demo import validate_counts, write_scenario
 
+
 def test_counts_are_strict():
     assert validate_counts({"car": 2})["motorcycle"] == 0
     for invalid in ({"car": -1}, {"bus": 1.2}, {"van": 3}, {"car": True}):
