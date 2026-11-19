@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-19T06:56:11.186918+05:30 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="simulation/junction.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="simulation/validated"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<edges version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <edge id="e_in" from="E" to="C" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="e_out" from="C" to="E" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="n_in" from="N" to="C" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="n_out" from="C" to="N" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="s_in" from="S" to="C" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="s_out" from="C" to="S" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="w_in" from="W" to="C" priority="-1" numLanes="2" speed="13.90"/>
+    <edge id="w_out" from="C" to="W" priority="-1" numLanes="2" speed="13.90"/>
+</edges>
