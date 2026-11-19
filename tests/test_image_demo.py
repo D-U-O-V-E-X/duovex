@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
 from unittest.mock import patch
+
 import pytest
+
 from duovex.simulation.image_demo import validate_counts, write_scenario
 
 def test_counts_are_strict():
