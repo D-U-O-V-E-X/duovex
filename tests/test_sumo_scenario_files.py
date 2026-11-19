@@ -2,8 +2,8 @@
 
 These checks do not replace a live SUMO/TraCI rerun.
 """
-from pathlib import Path
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SIM = ROOT / "simulation"
