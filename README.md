@@ -23,3 +23,8 @@ If `py` is not recognized, use `python --version` and `where.exe python`; instal
 SUMO -> traffic-state extraction -> prediction baselines -> advisory generation -> MQTT -> simulated driver. Reliability evaluation measures attempted/received messages, delivery ratio and latency.
 
 **Measurement discipline:** application-level dropping before MQTT publish is not network packet loss. MQTT QoS 0/1/2 are protocol delivery semantics, not proof that a driver received or displayed an alert. Record seeds, versions, run IDs and impairment settings. Never present simulation as real-world validation.
+
+## ESA review demo (checked-in reference scenario)
+The preserved synthetic SUMO junction and routes are now in `simulation/`. See [the reproducible SUMO runbook](docs/ESA_SUMO_RUNBOOK.md) for Windows prerequisites, SUMO-GUI, CSV evidence and MQTT steps. Do not run `build_network` before replaying the committed scenario: it rewrites several simulation inputs.
+
+A separate [image-conditioned scenario demo](docs/IMAGE_DEMO.md) turns human-annotated vehicle counts or optional local object-detector output into *synthetic* demand for a generic junction. A single photo does not reconstruct real junction geometry or signal phase timings. Camera inference, end-to-end SUMO execution, and real-phone MQTT delivery still need independent local verification.
