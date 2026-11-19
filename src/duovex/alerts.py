@@ -3,6 +3,7 @@ from math import atan2, degrees, hypot
 from time import time
 from uuid import uuid4
 
+
 @dataclass(frozen=True)
 class VehicleState:
     vehicle_id: str

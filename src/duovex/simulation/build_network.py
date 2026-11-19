@@ -1,6 +1,7 @@
 """Create a simple four-arm junction scenario using SUMO netconvert."""
-from pathlib import Path
 import subprocess
+from pathlib import Path
+
 
 def main():
     root = Path(__file__).resolve().parents[3]

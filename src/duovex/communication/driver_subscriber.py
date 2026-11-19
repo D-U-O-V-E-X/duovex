@@ -1,7 +1,10 @@
 """Console simulated-driver MQTT subscriber."""
 import json
+
 import paho.mqtt.client as mqtt
+
 from duovex.config import Settings
+
 
 def main():
     cfg = Settings()

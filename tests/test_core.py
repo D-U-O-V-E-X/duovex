@@ -1,7 +1,9 @@
 import pytest
-from duovex.traffic import TrafficObservation, PersistenceBaseline, HistoricalAverageBaseline
-from duovex.reliability import impair_messages, summarize
+
 from duovex.alerts import VehicleState, build_ambulance_alert
+from duovex.reliability import impair_messages, summarize
+from duovex.traffic import HistoricalAverageBaseline, PersistenceBaseline, TrafficObservation
+
 
 def observation(t, count):
     return TrafficObservation(t, "edge", count, 5.0, 2)
